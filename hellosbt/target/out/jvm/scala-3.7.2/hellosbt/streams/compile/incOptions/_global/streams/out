@@ -1,0 +1,20 @@
+[debug] Created transactional ClassFileManager with tempDir = /home/wene/App/sem/hellostainless/hellosbt/target/out/jvm/scala-3.7.2/hellosbt/classes.bak
+[debug] About to delete class files:
+[debug] 	Hello.class
+[debug] 	Hello$.class
+[debug] 	Hello.tasty
+[debug] 	Hello$.tasty
+[debug] We backup class files:
+[debug] 	Hello.class
+[debug] 	Hello$.class
+[debug] 	Hello.tasty
+[debug] 	Hello$.tasty
+[debug] Created transactional ClassFileManager with tempDir = /home/wene/App/sem/hellostainless/hellosbt/target/out/jvm/scala-3.7.2/hellosbt/classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Registering generated classes:
+[debug] 	Hello.class
+[debug] 	Hello$.class
+[debug] 	Hello.tasty
+[debug] 	Hello$.tasty
+[debug] Removing the temporary directory used for backing up class files: /home/wene/App/sem/hellostainless/hellosbt/target/out/jvm/scala-3.7.2/hellosbt/classes.bak

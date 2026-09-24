@@ -1,0 +1,25 @@
+[debug] Found differing options:
+[debug] a: scala=-Xplugin-require:stainless,-P:stainless:verify:true,-P:stainless:ghost-elim:true,-Xplugin:${IVY_HOME}/local/ch.epfl.lara/stainless-dotty-plugin_3.7.2/0.9.9.2/jars/stainless-dotty-plugin_3.7.2.jar java=
+[debug] b: scala=-Xplugin-require:stainless,-P:stainless:verify:true,-Xplugin:${IVY_HOME}/local/ch.epfl.lara/stainless-dotty-plugin_3.7.2/0.9.9.2/jars/stainless-dotty-plugin_3.7.2.jar java=
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
+[debug] current source = Set(${BASE}/Hello.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/Hello.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] Full compilation, no sources in previous analysis.
+[debug] all 1 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0 percent of all sources
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to /home/wene/App/sem/hellostainless/hellosbt/target/out/jvm/scala-3.7.2/hellosbt/classes ...
+[debug] Returning already retrieved and compiled bridge: /home/wene/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.7.2/scala3-sbt-bridge-3.7.2.jar.
+[debug] [zinc] Running cached compiler 515b1cdb for Scala Compiler version 3.7.2
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-Xplugin-require:stainless
+[debug] 	-P:stainless:verify:true
+[debug] 	-Xplugin:/home/wene/.ivy2/local/ch.epfl.lara/stainless-dotty-plugin_3.7.2/0.9.9.2/jars/stainless-dotty-plugin_3.7.2.jar
+[debug] 	-classpath
+[debug] 	/home/wene/App/sem/hellostainless/hellosbt/target/out/jvm/scala-3.7.2/hellosbt/classes:/home/wene/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.7.2/scala3-library_3-3.7.2.jar:/home/wene/.ivy2/local/ch.epfl.lara/stainless-library_3/0.9.9.2/jars/stainless-library_3.jar:/home/wene/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar
+[debug] Scala compilation took 3.180638072 s
+[debug] done compiling
+[debug] wrote ${OUT}/jvm/scala-3.7.2/hellosbt/classes

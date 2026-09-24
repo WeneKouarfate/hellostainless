@@ -8,5 +8,5 @@ object Hello {
     } else {
       n * factorial(n - 1)
     }
-  }.ensuring(res => res >= 0)
+  }.ensuring(res => res > n)
 }
