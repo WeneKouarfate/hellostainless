@@ -1,6 +1,14 @@
-scalaOrganization := "ch.epfl.lara"
+//scalaOrganization := "ch.epfl.lara"
 scalaVersion := "3.10.1-RC1-bin-20260903-e1f9361-NIGHTLY"
 
+lazy val util = (project in file("."))
+  .enablePlugins(ch.epfl.lara.sbt.stainless.StainlessPlugin)
+  .settings(
+    name := "hello-sbt-stainless",
+    stainlessEnabled := true, 
+  )
+
+/*
 autoCompilerPlugins := true
 
 libraryDependencies ++= Seq(
@@ -13,14 +21,8 @@ libraryDependencies ++= Seq(
 
 scalacOptions ++= Seq(
   "-Xplugin-require:stainless",
-  /* The compiler message suggested to use following
-   * as Bigint is marked @experimental
-   * we may endup using just -experimental if much more similar features are required
-   */
   "-language:experimental.qualifiedTypes",
-  //"-experimental",
   "-P:stainless:verify:true",
-  "-P:stainless:ghost-elim:true",
-  //"-P:stainless:help"
+  "-P:stainless:ghost-elim:true"
 )
-
+*/
