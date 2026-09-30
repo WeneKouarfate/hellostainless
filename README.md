@@ -12,6 +12,6 @@ sbt "stainless-dotty-plugin/publishLocal stainless-library/publishLocal"
 ```
 and or `publishM2` respectively instead of `publishLocal`. It should package nightly versions onn the `main` banch.
 
-- ~~run `sbt compile` in hellosbt~~
+- run `sbt "cleanFull; compile"` in hellosbt
 - run `sclala-cli --power --cli-version nightly compile Hello.scala` in hellocli
 - ~~open `hellosbt/` in VS-Code and review `Hello.scala` with `sbt` as build server~~
