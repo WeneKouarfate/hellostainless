@@ -14,4 +14,4 @@ and or `publishM2` respectively instead of `publishLocal`. It should package nig
 
 - run `sbt "cleanFull; compile"` in hellosbt
 - run `sclala-cli --power --cli-version nightly compile Hello.scala` in hellocli
-- ~~open `hellosbt/` in VS-Code and review `Hello.scala` with `sbt` as build server~~
+- open `hellosbt/` in VS-Code, launch a server from command line (`sbt` command) and review `Hello.scala` with `sbt` as build server
