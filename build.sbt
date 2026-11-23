@@ -13,16 +13,11 @@ libraryDependencies ++= Seq(
 
 scalacOptions ++= Seq(
   "-Xplugin-require:stainless",
-  /* The compiler message suggested to use following
-   * as Bigint is marked @experimental
-   * we may endup using just -experimental if much more similar features are required
-   */
   "-language:experimental.qualifiedTypes",
   //"-experimental",
   "-P:stainless:verify:true",
   "-P:stainless:ghost-elim:false",
-  "-P:stainless:timeout:10",
+  "-P:stainless:timeout:64",
   "-P:stainless:functions:Hello._",
-  //"-P:stainless:help"
 )
 
