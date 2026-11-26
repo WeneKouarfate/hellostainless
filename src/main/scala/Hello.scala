@@ -8,7 +8,7 @@ object Hello {
     } else {
       n * factorial(n - 1)
     }
-  }.ensuring(res => res >= n)
+  }.ensuring(res => res >  n)
   
   def factorialStep(n: BigInt): Boolean = {
     require(n >= 0)
@@ -22,7 +22,7 @@ object Hello {
 
   def foldTree12(tree: Tree12[BigInt]): BigInt = {
     tree match {
-      case Leaf() => BigInt(0)
+      case Leaf() => BigInt(1)
       case One(a, t) => a + foldTree12(t)
       case Two(a, t1, t2) => a * (foldTree12(t1) + foldTree12(t2))
     }

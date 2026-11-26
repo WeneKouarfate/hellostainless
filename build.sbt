@@ -4,9 +4,9 @@ scalaVersion := "3.10.1-RC1-bin-20260903-e1f9361-NIGHTLY"
 autoCompilerPlugins := true
 
 libraryDependencies ++= Seq(
-  "io.github.WeneKouarfate" %% "stainless-library" % "0.0.0-alpha1-4-g964325d-SNAPSHOT",
+  "io.github.WeneKouarfate" %% "stainless-library" % "0.0.0-alpha1-5-ga5833b6-SNAPSHOT",
   compilerPlugin(
-    ("io.github.WeneKouarfate" % "stainless-dotty-plugin" % "0.0.0-alpha1-4-g964325d-SNAPSHOT")
+    ("io.github.WeneKouarfate" % "stainless-dotty-plugin" % "0.0.0-alpha1-5-ga5833b6-SNAPSHOT")
       .cross(CrossVersion.full)
   )
 )
