@@ -12,7 +12,7 @@ Please make sure the published compiler appears in `build.sbt` with the same exa
 ```
 git clone https://github.com/WeneKouarfate/stainless
 cd stainless
-git checkout dotty-plugin/misc
+git checkout dotty-plugin/reporting
 sbt "stainless-dotty-plugin/publishLocal; stainless-library/publishLocal"
 ```
 
