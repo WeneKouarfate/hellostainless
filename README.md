@@ -6,7 +6,7 @@ git clone git@github.com:epfl-lara/dotty.git
 sbt "scala3-bootstrapped / publishLocal"
 ```
 
-Please make sure the published compiler appears in `build.sbt` with the same exact version as in `~/ivy2/local/io.WeneKouarfate`.
+Please make sure the published compiler appears in `build.sbt` with the same exact version as in `~/ivy2/local/ch.epfl.ch`.
 
 - Clone and publish locally the stainless fork with modified dotty plugin:
 ```
@@ -21,4 +21,5 @@ Again, please make sure the published versions match your `build.sbt`.
 The projects are based on `ch.epfl.lara` scalaOrganization for a specific NIGHTLY version that Metals doesn't support 'from scratch' so we are wiring Metals to our local sbt server for use in sbt. Since Metals rely internally on coursier with hardcoded `org.scala-lang` organization, the required packages must be published locally.
 
 - open an sbt server with the `sbt` command. It should create a `.bsp/bsp.json` file. 
-- open VS-Code with metals and switch build server to sbt. You should see connexion related logs in your sbt console. You can start reviewing `Hello.scala`.
+- open VS-Code with metals and switch build server to sbt. You should see connexion related logs in your sbt console. You can start reviewing `Hello.scala`. You can also get 'normal' stainless output (ASCII emitted TABLE).
+
